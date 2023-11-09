@@ -1,0 +1,30 @@
+[package]
+name = "libp2p-simulation"
+version = "0.1.0"
+edition = "2021"
+
+[dev-dependencies]
+env_logger = { version = "0.10.1" }
+
+blake2 = { version = "0.10.6" }
+
+libp2p-pnet = { git = "https://github.com/openmina/rust-libp2p", branch = "dan_kad" }
+libp2p-noise = { git = "https://github.com/openmina/rust-libp2p", branch = "dan_kad" }
+libp2p-yamux = { git = "https://github.com/openmina/rust-libp2p", branch = "dan_kad" }
+libp2p-kad = { git = "https://github.com/openmina/rust-libp2p", branch = "dan_kad" }
+
+[dependencies]
+log = { version = "0.4.20" }
+hex = { version = "0.4.3" }
+
+futures = { version = "0.3.29" }
+cooked-waker = { version = "5.0" }
+
+libp2p-core = { git = "https://github.com/openmina/rust-libp2p", branch = "dan_kad" }
+libp2p-swarm = { git = "https://github.com/openmina/rust-libp2p", branch = "dan_kad" }
+libp2p-identity = { version = "0.2.7", features = ["peerid", "ed25519"] }
+
+stateright = { version = "0.30.1", optional = true }
+
+[features]
+default = ["stateright"]

@@ -1,0 +1,21 @@
+{
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/target/debug/incremental/**": true
+    },    
+    "cSpell.words": [
+        "behaviour",
+        "dealloc",
+        "deque",
+        "kademlia",
+        "keypair",
+        "libp2p",
+        "multiaddr",
+        "muxer",
+        "muxing",
+        "pnet",
+        "stateright",
+        "yamux",
+    ]
+}
